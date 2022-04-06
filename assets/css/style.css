@@ -46,9 +46,103 @@ h1.title:hover{
 /* Hover on the hyperlinks */
 .navbar ul li:hover{
     background-color: aquamarine;
+    padding: 10px 20px;
+    transition: .7s ease-in-out;
 }
 .navbar ul li:hover a{
     text-decoration: double;
     color: black;
     transition: .5s ease-in;
 }
+/* Slider section */
+.slider{
+    background-image: url('../images/1.jpg');
+    min-height: 70vh;
+    background-size: cover;
+    background-repeat:no-repeat;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+}
+.slider h2{
+    color:burlywood;
+    padding: 2px;
+    border-radius: 8%;
+    cursor:text;
+    opacity: .4;
+}
+.slider button{
+    background-color: burlywood;
+    color: white;
+    
+    padding:12px 42px;
+    border-radius: 12%;
+    cursor:grabbing;
+
+}
+.slider button:hover{
+    color:aquamarine;
+    transition: .6s ease-in-out;
+    padding:20px 50px;
+}
+.welcome p{
+    width: 60%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 32px;
+}
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.col{
+    max-width: 50%;
+}
+.img-fluid{
+    width: 100%;
+    object-fit:cover;
+}
+.px-3{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.py-4{
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+.text-start{
+    text-align: left !important; 
+}
+.text-center{
+    text-align: center!important;
+}
+.text-end{
+    text-align: right!important;
+}
+.credit{
+    background: linear-gradient(45deg, #f1365bd8, #F1365B, #f1365bd8);
+}
+.credit p{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.credit:hover{
+    transform: rotate(1deg);
+    transition-duration: .3s;
+} 
